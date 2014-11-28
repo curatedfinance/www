@@ -20,16 +20,8 @@
     <link href='http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
 
-    <link rel='stylesheet' type='text/css' href='http://cdn1.editmysite.com/editor/images/slideshow/slideshow.css?1234'/>
-    <script><!--
-    var STATIC_BASE = '//cdn1.editmysite.com/';
-    var STYLE_PREFIX = 'wsite';
-    //-->
-    </script>
     <script src='libs/jquery/jquery-1.8.3.min.js'></script>
     <script src='http://cdn2.editmysite.com/js/site/main.js?buildTime=1234'></script>
-    <script type='text/javascript'
-            src='http://cdn1.editmysite.com/editor/libraries/slideshow-jq.js?buildTime=1234'></script>
     <script>_W.relinquish && _W.relinquish()</script>
     <script type='text/javascript'><!--
     var IS_ARCHIVE = 1;/*
@@ -93,6 +85,10 @@
             height: 2px;
             margin: 8px 0;
         }
+        .btn-curated {
+            background-color: black;
+            border-color: black;
+        }
     </style>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -135,7 +131,7 @@
                 <a id="landing-scroll"></a>
             </div>
         </div>
-
+        <!--
         <section id="g-about" class="section-padded">
           <div class="container">
             <h1 class="main-title">
@@ -178,6 +174,7 @@
             </div>
           </div>
         </section>
+        -->
 
         <div class="container">
             <div class="row">
@@ -252,7 +249,7 @@
                             data-bv-stringlength-message="Must be less than %s characters long"></textarea>
                         </div>
                         <p class="form-submit">
-                          <input name="submit" type="submit" class="btn btn-primary" id="lba-general_feedback-send" value="Send" onclick="javascript:postGForm('lba-general_feedback', general_feedback_FormConfig);" />
+                          <input name="submit" type="submit" class="btn btn-primary btn-curated btn-block" id="lba-general_feedback-send" value="Send" onclick="javascript:postGForm('lba-general_feedback', general_feedback_FormConfig);" />
                         </p>
                       </form>
                     </div>
@@ -274,6 +271,14 @@
             $("#" + this.id).bootstrapValidator();
         });
     });
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-57164868-1', 'auto');
+  ga('send', 'pageview');
 </script>
 
 </body>
